@@ -1,0 +1,37 @@
+html{
+    font-family:"KaiTi"
+    /*文本字体*/
+}
+body{
+    background-color:#6c6b6b;
+    background-image: url(https://ooo.0x0.ooo/2024/09/09/OtC9ig.jpg);
+    bcakground-repeat: no-repeat;
+}
+
+a {text-decoration:none;}
+
+img{
+    height:auto;
+    width:auto;
+    width: 100%;
+}
+h1{
+    color:#dcdcdc;
+    /*文本颜色*/
+    text-align: center;
+    /*文本居中对齐*/
+}
+
+h2 {
+    color:#dcdcdc;
+    text-align:center;
+}
+
+p{
+    color: #dcdcdc;
+    /*文本颜色*/
+    font-size:20px;
+    /*文本大小*/
+    text-indent:50px;
+    /*文本缩进*/
+}
