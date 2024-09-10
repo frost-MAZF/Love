@@ -5,10 +5,10 @@ const ap = new APlayer({
     autoplay: true,
     theme: '#FADFA3',
     loop: 'all',
-    order: 'random',
+    order: 'list',
     volume: 0.9,
     mutex: true,
-    listFolded: false,
+    listFolded: true,
     listMaxHeight: 90,
     lrcType: 3,
     audio: [
