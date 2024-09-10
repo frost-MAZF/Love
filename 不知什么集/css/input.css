@@ -38,7 +38,7 @@ h1,h2{
 p{
     color: #ffffff;
     /*文本颜色*/
-    font-size:20px;
+    /*font-size:40px;/*
     /*文本大小*/
     text-indent:50px;
     /*文本缩进*/
