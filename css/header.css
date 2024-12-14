@@ -1,3 +1,9 @@
+body {
+    background-color:rgb(100, 100, 100);
+}
+p {
+    color:rgb(255, 255, 255)
+}
 .page-head {
 /*选择class类名*/
 
@@ -126,9 +132,12 @@
             border-right-width:1px;
             border-bottom-width:5px;
             padding:0px;
+
             display: -webkit-box;
             margin-left: auto;
-            margin-right:10px;
+            /*将图片始终靠右*/
+            
+            margin-right:1%;
             text-align:center;
             /*object-fit: cover;*/
             /*object-fit: cover属性确保图片按比例填充，而不变形。*/
@@ -139,12 +148,12 @@
         background-color:transparent;
         border: none;
         color: white;
-        padding: 10px 10px;
+        padding: 0% 0%;
         text-align: center;
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: 4px 2px;
+        margin: 1% 1%;
         cursor: pointer;
         
         border-radius: 2px;

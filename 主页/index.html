@@ -3,6 +3,28 @@
 <head>
 <meat charset="utf-8"></meat>
 <link href="./css/home.css" rel="stylesheet">
-<title></title>
+<title>主页</title>
 </head>
+<body>
+    <h1>women</h1>
+    <span id="elapseClock" style="font-size: 45px;font-weight: 300;"></span>
+    <script type="text/javascript">
+    var together = new Date();
+    var strs = "2024-07-18 00:00:00";
+    var nowTime = new Date();
+    var together = new Date(strs.replace(/-/g, "/"));
+    timeElapse(together);
+    setInterval(function () { timeElapse(together); }, 500);
+    function timeElapse(c) {
+       var e = Date();
+       var f = (Date.parse(e) - Date.parse(c)) / 1000;
+       var g = Math.floor(f / (3600 * 24)); f = f % (3600 * 24);
+       var b = Math.floor(f / 3600);
+       if (b < 10) { b = "0" + b } f = f % 3600; var d = Math.floor(f / 60);
+       if (d < 10) { d = "0" + d } f = f % 60;
+       if (f < 10) { f = "0" + f }
+       var a = '<span class="digit">' + g + '</span> 天 <span class="digit">' + b + '</span> 小时 <span class="digit">' + d + '</span> 分 <span class="digit">' + f + "</span> 秒"; $("#elapseClock").html(a)
+    };
+ </script>
+</body>
 </html>

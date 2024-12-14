@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(146, 146, 146);
+}
+p{
+    color:rgb(255, 255, 255);
+}
+
+.page{
+    background-color: rgb(124,124,124);
+    border-color:rgb(171, 171, 171);
+    border-style:solid;
+    border-width: 2px;
+    display: grid;
+}
+.page-img{
+    border-color:transparent;
+    border-style:solid;
+    border-width: 1px;
+    text-align: center;
+}
+.page-date{
+    h3{
+        color: rgb(255, 255, 255);
+    }
+    span{
+        color:rgb(255, 255, 255);
+    }
+    text-align: center;
+}
+.page-description{
+    background-color:rgb(100, 100, 100);
+    display: grid;
+}
+.page-description-title{
+    background-color:rgb(146, 146, 146);
+    border-color:rgb(124,124,124);
+    border-style:solid;
+}
