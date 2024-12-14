@@ -1,0 +1,124 @@
+.page-head {
+/*选择class类名*/
+
+    background-color: transparent;
+    /*设置背景为透明*/
+
+    text-align: center;
+     /*设置文本对齐方式*/
+
+    width: 300px;
+    /*透明区域的宽度*/
+    
+    /*上面设置<div>到</div>的基本信息*/
+
+    border-top:dashed;
+    border-right:solid;
+    border-bottom:dashed;
+    border-left:solid;
+    /*设置边框样式，top是顶部，right是右，bottom是底部，left是左，*/
+
+    border-color:rgb(118, 118, 118);
+    /*设置边框颜色*/
+
+    border-top-width: 1px;
+    border-right-width: 10px;
+    border-bottom-width: 1px;
+    border-left-width: 10px; 
+    /*左右边框的宽度，也就是浅灰色区域*/
+
+    /*上面所有的border（边框）属性，允许你指定一个元素边框的样式和颜色。*/
+    
+    outline-color:#000000;
+    outline-style:solid;
+    outline-width:0px;
+    /*
+    是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。
+    使用方法和border是一样的，只不过吧border改成outline而已。
+    值得注意的是：
+    1.outline是不占空间的，既不会增加额外的width或者height（这样不会导致浏览器渲染时出现reflow或是repaint）
+    2.outline有可能是非矩形的（火狐浏览器下）
+    */
+
+    margin-top: auto;
+    margin-right:auto;
+    margin-bottom:auto;
+    margin-left:auto;
+    /*
+    margin(外边距)属性定义元素周围的空间。
+    margin 清除周围的（外边框）元素区域。margin 没有背景颜色，是完全透明的。
+    margin 可以单独改变元素的上，下，左，右边距，也可以一次改变所有的属性。
+    和border一样，margin也可以单独设定顶右底左的宽度
+    你也可以将值设置成auto，来依赖浏览器设置边距。
+    */
+
+    padding: 10px rgb(255, 255, 255);
+    /*
+    padding（填充）是一个简写属性，定义元素边框与元素内容之间的空间，即上下左右的内边距。
+    当元素的 padding（填充）内边距被清除时，所释放的区域将会受到元素背景颜色的填充。
+    单独使用 padding 属性可以改变上下左右的填充。
+    */
+}
+.page-link {
+    border-color:#000000;
+    border-style:solid;
+    background-color:rgba(124, 124, 124,0.6);
+
+
+    .page-link-url{
+    text-align: center;
+    font-size: 20px;
+    a:link {color:rgb(0, 0, 0);}      /* 未访问链接*/
+    a:visited {color:rgb(162, 162, 162);}  /* 已访问链接 */
+    a:hover {color:#3c3c3c;}  /* 鼠标移动到链接上 */
+    a:active {color:#0000FF;}  /* 鼠标点击时 */
+
+    a:link {text-decoration:none;}
+    a:visited {text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    a:active {text-decoration:underline;}
+    /*text-decoration 属性主要用于删除链接中的下划线：*/
+
+    a:link {background-color:#939393;}    /* 未访问链接 */
+    a:visited {background-color:#FFFF85;} /* 已访问链接 */
+    a:hover {background-color:rgb(162, 162, 162);}   /* 鼠标移动到链接上 */
+    a:active {background-color:#FF704D;}  /* 鼠标点击时 */
+    }
+    .page-link-ifarme{
+        border-color:transparent;
+    }
+}
+
+.page-img {
+    
+    background-color:rgb(124, 124, 124,0.6);
+    /*设置元素的背景颜色。*/
+
+    text-indent: 25px;
+    /*设置文本第一行缩进*/
+
+    display:inline-flex;
+    /* 
+    Display(显示) 属性设置一个元素应如何显示，visibility属性指定一个元素应可见还是隐藏。    
+    隐藏一个元素可以通过把display属性设置为"none"，或把visibility属性设置为"hidden"。但是请注意，这两种方法会产生不同的结果。
+    visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。
+    display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。
+    */
+    border-style:solid;
+    border-color:rgb(124, 124, 124);
+    border-width:5px;
+    margin:auto;
+
+    .page-img-p{
+        text-align:left;
+        p {color:#000000;}
+        }
+    
+    .page-img-img {
+        background-color:transparent;
+        width:100%;
+        height:100%;
+        margin-right:7%
+    }
+
+}
