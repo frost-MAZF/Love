@@ -1,13 +1,21 @@
 .page-head {
 /*选择class类名*/
 
-    background-color: transparent;
+    background-color:rgb(148, 148, 148);
     /*设置背景为透明*/
 
     text-align: center;
      /*设置文本对齐方式*/
 
-    width: 300px;
+    position: sticky;
+    top:0;
+    /*
+    sticky定位粘性定位的元素是依赖于用户的滚动，在 position:relative 与 position:fixed 定位之间切换。
+    它的行为就像 position:relative; 而当页面滚动超出目标区域时，它的表现就像 position:fixed;，它会固定在目标位置。
+    元素定位表现为在跨越特定阈值前为相对定位，之后为固定定位。
+    这个特定阈值指的是 top, right, bottom 或 left 之一，换言之，指定 top, right, bottom 或 left 四个阈值其中之一，才可使粘性定位生效。否则其行为与相对定位相同。  
+    */
+    width: 96%;
     /*透明区域的宽度*/
     
     /*上面设置<div>到</div>的基本信息*/
@@ -40,10 +48,15 @@
     2.outline有可能是非矩形的（火狐浏览器下）
     */
 
+    margin:0% auto;
+    /*将border居中页面。*/
+
+    /*
     margin-top: auto;
-    margin-right:auto;
+    margin-right:10%;
     margin-bottom:auto;
-    margin-left:auto;
+    margin-left:15%;
+    */
     /*
     margin(外边距)属性定义元素周围的空间。
     margin 清除周围的（外边框）元素区域。margin 没有背景颜色，是完全透明的。
@@ -59,66 +72,124 @@
     单独使用 padding 属性可以改变上下左右的填充。
     */
 }
-.page-link {
-    border-color:#000000;
-    border-style:solid;
-    background-color:rgba(124, 124, 124,0.6);
 
+.page-title{
+    font-size: 16px;
+    text-align:center;
+}
 
-    .page-link-url{
-    text-align: center;
-    font-size: 20px;
-    a:link {color:rgb(0, 0, 0);}      /* 未访问链接*/
-    a:visited {color:rgb(162, 162, 162);}  /* 已访问链接 */
-    a:hover {color:#3c3c3c;}  /* 鼠标移动到链接上 */
-    a:active {color:#0000FF;}  /* 鼠标点击时 */
+.page-list{
+        background-color:rgb(124, 124, 124,0.6);
+        border-color:rgb(171, 171, 171);
+        border-style:solid;
+        border-width:5px 5px 5px 5px;
+        position: relative;
+        .page-list-description {
+            
+            background-color:transparent;
+            /*设置元素的背景颜色。*/
 
-    a:link {text-decoration:none;}
-    a:visited {text-decoration:none;}
-    a:hover {text-decoration:underline;}
-    a:active {text-decoration:underline;}
-    /*text-decoration 属性主要用于删除链接中的下划线：*/
+            text-indent: 25px;
+            /*设置文本第一行缩进*/
 
-    a:link {background-color:#939393;}    /* 未访问链接 */
-    a:visited {background-color:#FFFF85;} /* 已访问链接 */
-    a:hover {background-color:rgb(162, 162, 162);}   /* 鼠标移动到链接上 */
-    a:active {background-color:#FF704D;}  /* 鼠标点击时 */
+            display:flex;
+
+            justify-content: center;
+
+            align-items: center;
+            /* 
+            Display(显示) 属性设置一个元素应如何显示，visibility属性指定一个元素应可见还是隐藏。    
+            隐藏一个元素可以通过把display属性设置为"none"，或把visibility属性设置为"hidden"。但是请注意，这两种方法会产生不同的结果。
+            visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。
+            display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。
+            */
+
+            width:100%;
+
+        .page-list-description-p{
+            border-color: rgba(124, 124, 124,0.6);
+            border-style: solid;;
+            border-width:0px;
+
+            margin-left:5px;
+            float:right;
+            position:relative;
+            p {color:#ffffff;}
+        
+        }
+
+        .page-list-description-img {
+            border-color:transparent;
+            border-style:solid;
+            border-top-width:5px;
+            border-left-width:1px;
+            border-right-width:1px;
+            border-bottom-width:5px;
+            padding:0px;
+            display: -webkit-box;
+            margin-left: auto;
+            margin-right:10px;
+            text-align:center;
+            /*object-fit: cover;*/
+            /*object-fit: cover属性确保图片按比例填充，而不变形。*/
+            /*overflow:visible;*/
+        }
     }
-    .page-link-ifarme{
-        border-color:transparent;
+    .page-list-button{
+        background-color:transparent;
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        
+        border-radius: 2px;
+
+        position:absolute;
+        right:0;
+        bottom:0;
+        a:link {text-decoration:none;}
+        a:visited {text-decoration:none;}
+        a:hover {text-decoration:underline;}
+        a:active {text-decoration:underline;}
+    
     }
 }
 
-.page-img {
-    
-    background-color:rgb(124, 124, 124,0.6);
-    /*设置元素的背景颜色。*/
-
-    text-indent: 25px;
-    /*设置文本第一行缩进*/
-
-    display:inline-flex;
-    /* 
-    Display(显示) 属性设置一个元素应如何显示，visibility属性指定一个元素应可见还是隐藏。    
-    隐藏一个元素可以通过把display属性设置为"none"，或把visibility属性设置为"hidden"。但是请注意，这两种方法会产生不同的结果。
-    visibility:hidden可以隐藏某个元素，但隐藏的元素仍需占用与未隐藏之前一样的空间。也就是说，该元素虽然被隐藏了，但仍然会影响布局。
-    display:none可以隐藏某个元素，且隐藏的元素不会占用任何空间。也就是说，该元素不但被隐藏了，而且该元素原本占用的空间也会从页面布局中消失。
-    */
+.page-link {
+    border-color:rgb(171, 171, 171);
     border-style:solid;
-    border-color:rgb(124, 124, 124);
-    border-width:5px;
-    margin:auto;
-
-    .page-img-p{
-        text-align:left;
-        p {color:#000000;}
-        }
+    background-color:rgba(124, 124, 124,0.6);
     
-    .page-img-img {
-        background-color:transparent;
-        width:100%;
-        height:100%;
-        margin-right:7%
-    }
 
+    .page-link-url{
+        text-align: center;
+        font-size: 20px;
+        a:link {color:rgb(0, 0, 0);}      /* 未访问链接*/
+        a:visited {color:rgb(162, 162, 162);}  /* 已访问链接 */
+        a:hover {color:#3c3c3c;}  /* 鼠标移动到链接上 */
+        a:active {color:#0000FF;}  /* 鼠标点击时 */
+        /*上面的是链接文字颜色*/
+
+        a:link {text-decoration:none;}
+        a:visited {text-decoration:none;}
+        a:hover {text-decoration:underline;}
+        a:active {text-decoration:underline;}
+        /*text-decoration 属性主要用于删除链接中的下划线：*/
+
+
+        /*a:link {background-color:#939393;}    /* 未访问链接 */
+        a:visited {background-color:rgb(162, 162, 162);} /* 已访问链接 */
+        a:hover {background-color:rgb(162, 162, 162);}   /* 鼠标移动到链接上 */
+        a:active {background-color:#FF704D;}  /* 鼠标点击时 */
+        /*上面的是链接背景颜色*/
+    }
+    .page-link-ifarme{
+            border-color:transparent;
+            margin:0% auto;
+    }
 }
